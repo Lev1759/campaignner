@@ -2,15 +2,15 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import { ArrowRight, Play, ShieldCheck, MessageSquareText, BarChart3 } from "lucide-react";
+import { ArrowRight, Play, ShieldCheck, MessageSquareText, BarChart3, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const TRUST_PILLS = ["Voters", "Candidates", "Civil Society", "Media"];
+// const TRUST_PILLS = ["Voters", "Candidates", "Civil Society", "Media"];
 
 const FEATURE_PILLS = [
-  { icon: <ShieldCheck className="w-3.5 h-3.5" />, label: "Verified Participants" },
-  { icon: <MessageSquareText className="w-3.5 h-3.5" />, label: "Moderated Discussions" },
-  { icon: <BarChart3 className="w-3.5 h-3.5" />, label: "Fact-Checked Insights" },
+  { icon: <BadgeCheck className="w-5.5 h-5.5" />, label: "Verified Participants" },
+  { icon: <MessageSquareText className="w-5.5 h-5.5" />, label: "Moderated Discussions" },
+  { icon: <BarChart3 className="w-5.5 h-5.5" />, label: "Fact-Checked Insights" },
 ];
 
 export default function HeroSection() {
@@ -57,7 +57,7 @@ export default function HeroSection() {
             Where Democracy{" "}
             <span className="relative inline-block">
               Gets Real
-              <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-gradient-to-r from-brand-primary to-emerald-400 rounded-full" />
+              <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-gradient-to-r from-brand-primary to-blue-400 rounded-full" />
             </span>
           </motion.h1>
 
@@ -111,14 +111,14 @@ export default function HeroSection() {
           >
             {FEATURE_PILLS.map(({ icon, label }) => (
               <div key={label} className="flex items-center gap-1.5 text-white/60 text-sm">
-                <span className="text-emerald-400">{icon}</span>
+                <span className="text-blue-400">{icon}</span>
                 {label}
               </div>
             ))}
           </motion.div>
         </div>
 
-        {/* For… trust row */}
+        {/* For… trust row
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -131,7 +131,7 @@ export default function HeroSection() {
               {p}
             </span>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

@@ -26,36 +26,36 @@ const LINKS = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#070b16] border-t border-white/5 text-white/50">
+    <footer className="bg-white border-t border-white/5 text-white/5">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-12">
 
           {/* Brand */}
           <div className="md:col-span-4 space-y-4">
             <Logo />
-            <p className="text-sm leading-relaxed max-w-xs">
+            <p className="text-xs sm:text-sm leading-relaxed max-w-xs text-gray-700">
               A purpose-built platform for structured, respectful, and impactful
               civic conversation in Nigeria.
             </p>
-            <div className="flex items-center gap-3 pt-2">
+           
+          </div>
+             <div className="flex items-center gap-3 pt-2">
               {[
-                { icon: <FaXTwitter className="w-4 h-4" />, href: "#" },
-                { icon: <FaLinkedin className="w-4 h-4" />, href: "#" },
-                { icon: <FaFacebookF className="w-4 h-4" />, href: "#" },
-                { icon: <Mail className="w-4 h-4" />, href: "mailto:hello@campaignner.com" },
+                { icon: <FaXTwitter className="w-6 h-6" />, href: "#" },
+                { icon: <FaLinkedin className="w-6 h-6" />, href: "#" },
+                { icon: <FaFacebookF className="w-6 h-6" />, href: "#" },
+                { icon: <Mail className="w-6 h-6" />, href: "mailto:hello@campaignner.com" },
               ].map(({ icon, href }, idx) => (
                 <Link
                   key={idx}
                   href={href}
-                  className="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors"
+                  className="w-8 h-8 rounded-lg text-black hover:bg-gray-200 flex items-center justify-center transition-colors"
                 >
                   {icon}
                 </Link>
               ))}
             </div>
-          </div>
-
-          {/* Links */}
+          {/* Links
           {Object.entries(LINKS).map(([group, links]) => (
             <div key={group} className="md:col-span-2 space-y-4">
               <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-white/30">
@@ -74,13 +74,13 @@ export default function Footer() {
                 ))}
               </ul>
             </div>
-          ))}
+          ))} */}
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <div className="mt-16 pt-8 border-t border-gray-300 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p>© {new Date().getFullYear()} Campaignner. All rights reserved.</p>
-          <p className="text-white/30">
+          <p className="text-gray-500">
             Not affiliated with INEC or any political party. Civic transparency platform only.
           </p>
         </div>

@@ -10,8 +10,8 @@ import Logo from "./Logo";
 
 const NAV_LINKS = [
   { label: "How It Works", href: "#how-it-works" },
-  { label: "Candidates", href: "/candidates" },
-  { label: "For Candidates", href: "/candidates/register" },
+//   { label: "Candidates", href: "/candidates" },
+  { label: "For Candidates", href: "/c/register" },
 ];
 
 export default function Navbar() {
@@ -32,8 +32,8 @@ export default function Navbar() {
         transition={{ duration: 0.4 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
           ${scrolled
-            ? "bg-[#0a0f1e]/90 backdrop-blur-md border-b border-white/8 shadow-xl shadow-black/20"
-            : "bg-transparent"
+            ? "bg-white backdrop-blur-md border-b border-white/8 shadow-xl shadow-black/20"
+            : "bg-white"
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -46,7 +46,7 @@ export default function Navbar() {
               <Link
                 key={label}
                 href={href}
-                className="px-4 py-2 text-sm text-white/60 hover:text-white rounded-xl hover:bg-white/5 transition-all"
+                className="px-4 py-2 text-sm text-gray-700 hover:text-gray-800 rounded-xl hover:bg-gray-200 transition-all"
               >
                 {label}
               </Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
 
           {/* Mobile menu toggle */}
           <button
-            className="md:hidden p-2 text-white/70 hover:text-white"
+            className="md:hidden p-2 text-gray-900 hover:text-gray-700"
             onClick={() => setMobileOpen((p) => !p)}
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

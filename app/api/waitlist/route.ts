@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
               <table cellpadding="0" cellspacing="0">
                 <tr>
                   <td style="background:#1a54cb;border-radius:10px;width:36px;height:36px;text-align:center;vertical-align:middle;">
-                    <span style="color:#fff;font-weight:700;font-size:16px;line-height:36px;">B</span>
+                    <img src="/" alt="" style="color:#fff;font-weight:700;font-size:16px;line-height:36px;" />
                   </td>
                   <td style="padding-left:12px;">
                     <span style="color:#ffffff;font-weight:600;font-size:16px;">Campaignner</span>

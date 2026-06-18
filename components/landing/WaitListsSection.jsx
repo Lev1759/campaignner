@@ -105,7 +105,7 @@ export default function WaitlistSection() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
-            className="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary"
+            className="text-xs font-bold uppercase tracking-[0.2em] text-gray-300"
           >
             Early Access
           </motion.p>

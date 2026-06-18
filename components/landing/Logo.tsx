@@ -3,15 +3,38 @@ import { BiSolidMegaphone } from "react-icons/bi";
 
 export default function Logo() {
     return (
-        <div>
-            <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="px-1.5 py-0.5 rounded bg-blue-500 flex items-center justify-center shadow-md shadow-brand-primary/30">
-              <BiSolidMegaphone className="text-white font-bold w-7 h-7" />
+       <div>
+            <Link href="/" className="flex items-center group gap-1.5">
+            
+              {/* <BiSolidMegaphone className="text-blue-500 font-bold w-8 h-8" /> */}
+            
+            <div className="bg-white rounded-lg">
+                <img src="/campaignner_icon.png" alt="Campaignner logo" className="w-7 h-7 sm:w-10 sm:h-10 " />
             </div>
-            <span className="text-3xl font-display font-semibold text-white tracking-tight">
+            <span className="text-md sm:text-2xl text-black tracking-tighter">
               Campaignner 
             </span>
-            <span className="text-[8px] text-white/50 font-stretch-50%">NG</span>
+            <span className="text-[8px] text-gray-500 font-stretch-50% -translate-y-2 ml-1">NG</span>
+          </Link>
+        </div>
+    )
+}
+
+
+export function Logo2() {
+    return (
+        <div>
+            <Link href="/" className="flex items-center group">
+            
+              <BiSolidMegaphone className="text-blue-500 font-bold w-8 h-8" />
+            
+            {/* <div className="relative bg-white rounded-lg">
+                <img src="/campaignner_icon.png" alt="Campaignner logo" className="absolute inset-0 w-10 h-10 " />
+            </div> */}
+            <span className="text-2xl text-black tracking-tighter">
+              ampaignner 
+            </span>
+            <span className="text-[8px] text-gray-500 font-stretch-50% -translate-y-2 ml-1">NG</span>
           </Link>
         </div>
     )
