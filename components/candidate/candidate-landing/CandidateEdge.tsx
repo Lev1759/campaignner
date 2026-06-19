@@ -45,7 +45,7 @@ export default function CandidateEdge() {
           className="bg-white rounded-[24px] border border-slate-200/80 shadow-sm overflow-hidden"
         >
           {/* Header row */}
-          <div className="grid grid-cols-[1fr_auto_auto] sm:grid-cols-[1fr_140px_140px] items-center px-5 sm:px-7 py-4 border-b border-slate-100 bg-slate-50/60">
+          <div className="grid grid-cols-3 sm:grid-cols-[1fr_140px_140px] items-center px-5 sm:px-7 py-4 border-b border-slate-100 bg-slate-50/60">
             <span className="text-xs font-bold uppercase tracking-wider text-brand-muted">Feature</span>
             <span className="text-xs font-bold uppercase tracking-wider text-brand-primary text-center">Campaignner</span>
             <span className="text-xs font-bold uppercase tracking-wider text-brand-muted text-center">Social Media</span>
@@ -57,7 +57,7 @@ export default function CandidateEdge() {
               initial={{ opacity: 0 }}
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.15 + idx * 0.06 }}
-              className={`grid grid-cols-[1fr_auto_auto] sm:grid-cols-[1fr_140px_140px] items-center px-5 sm:px-7 py-4 ${
+              className={`grid grid-cols-3 sm:grid-cols-[1fr_140px_140px] items-center px-5 sm:px-7 py-4 ${
                 idx !== COMPARISON.length - 1 ? "border-b border-slate-100" : ""
               }`}
             >

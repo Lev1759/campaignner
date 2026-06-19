@@ -82,7 +82,7 @@ export default function RegisterLayout({
       <div className="min-h-screen bg-zinc-100 flex flex-col md:flex-row">
         <Navbar />
         <div className="flex-1 flex flex-col py-20">
-          <main className="flex-1 max-w-5xl mx-auto w-full p-4 md:p-8">
+          <main className="flex-1 w-full p-4 md:p-8">
             {children}
           </main>
         </div>

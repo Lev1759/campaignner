@@ -50,11 +50,8 @@ export async function POST(req: NextRequest) {
             <td style="background:#0a0f1e;padding:32px 40px;">
               <table cellpadding="0" cellspacing="0">
                 <tr>
-                  <td style="background:#1a54cb;border-radius:10px;width:36px;height:36px;text-align:center;vertical-align:middle;">
-                    <img src="/" alt="" style="color:#fff;font-weight:700;font-size:16px;line-height:36px;" />
-                  </td>
                   <td style="padding-left:12px;">
-                    <span style="color:#ffffff;font-weight:600;font-size:16px;">Campaignner</span>
+                    <span style="color:#ffffff;font-weight:800;font-size:20px;">Campaignner</span>
                   </td>
                 </tr>
               </table>

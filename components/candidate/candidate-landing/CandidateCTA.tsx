@@ -45,7 +45,7 @@ export default function CandidateCTA() {
             size="lg"
             className="bg-brand-primary hover:bg-brand-primary/90 text-white rounded-2xl px-8 font-semibold text-base h-13 gap-2 shadow-xl shadow-brand-primary/20 w-full sm:w-auto"
           >
-            <Link href="/candidates/register">
+            <Link href="/candidate/register" className="flex items-center gap-0.5">
               Register Now
               <ArrowRight className="w-4 h-4" />
             </Link>

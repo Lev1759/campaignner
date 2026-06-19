@@ -11,10 +11,10 @@ export default function Logo() {
             <div className="bg-white rounded-lg">
                 <img src="/campaignner_icon.png" alt="Campaignner logo" className="w-7 h-7 sm:w-10 sm:h-10 " />
             </div>
-            <span className="text-md sm:text-2xl text-black tracking-tighter">
+            <span className="text-md sm:text-2xl font-bold text-black tracking-tighter">
               Campaignner 
             </span>
-            <span className="text-[8px] text-gray-500 font-stretch-50% -translate-y-2 ml-1">NG</span>
+            <span className="text-[12px] text-gray-500 font-stretch-50% -translate-y-1 ml-0.5">NG</span>
           </Link>
         </div>
     )

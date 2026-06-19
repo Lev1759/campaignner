@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import { Eye, FileCheck, MessageSquareHeart, BarChart4 } from "lucide-react";
+import { Eye, FileCheck, MessageSquareHeart, BarChart4, BadgeCheckIcon } from "lucide-react";
 
 const BENEFITS = [
   {
@@ -24,7 +24,7 @@ const BENEFITS = [
     accent: "bg-violet-50 text-violet-600",
   },
   {
-    icon: <BarChart4 className="w-5 h-5" />,
+    icon: <BadgeCheckIcon className="w-5 h-5" />,
     title: "Earn the verified badge",
     body: "Verified profiles are trusted and ranked higher in search and comparison tools — a credibility signal social media simply can't offer.",
     accent: "bg-amber-50 text-amber-600",

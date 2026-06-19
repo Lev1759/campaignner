@@ -6,7 +6,7 @@ import { ArrowRight, BadgeCheckIcon, ShieldCheck, TrendingUp, Users2 } from "luc
 import { Button } from "@/components/ui/button";
 
 const TRUST_STATS = [
-  { icon: <Users2 className="w-5.5 h-5.5" />, label: "36 states, full LGA coverage" },
+  { icon: <Users2 className="w-5.5 h-5.5" />, label: "Nationwide, full LGA coverage" },
   { icon: <BadgeCheckIcon className="w-5.5 h-5.5" />, label: "Verified candidate badge" },
   { icon: <TrendingUp className="w-5.5 h-5.5" />, label: "Public endorsement tracking" },
 ];
@@ -29,7 +29,7 @@ export default function CandidateHero() {
           className="inline-flex items-center gap-2 bg-white/8 backdrop-blur-sm border border-white/12 text-white/80 text-xs font-medium px-4 py-2 rounded-full mb-7"
         >
           <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-          For Candidates & Political Parties
+          For Political Party Candidates
         </motion.div>
 
         {/* Headline */}
@@ -88,7 +88,7 @@ export default function CandidateHero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.36 }}
-          className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-white/45"
+          className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center  justify-center gap-x-6 gap-y-2 text-sm text-white/45"
         >
           {TRUST_STATS.map((s) => (
             <span key={s.label} className="flex items-center gap-1.5">
