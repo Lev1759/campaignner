@@ -11,7 +11,7 @@ import Logo from "./Logo";
 const NAV_LINKS = [
   { label: "How It Works", href: "#how-it-works" },
 //   { label: "Candidates", href: "/candidates" },
-  { label: "For Candidates", href: "/c/register" },
+  { label: "For Candidates", href: "/candidate" },
 ];
 
 export default function Navbar() {
