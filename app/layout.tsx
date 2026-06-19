@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     description:
       "Structured political discourse, transparent candidate profiles, and real civic accountability. Built for Nigeria.",
     url: "https://campaignner.com",
+    images: [
+      {
+        url: "https://campaignner.com/og/campaignner.png",
+        width: 1200,
+        height: 630,
+        alt: "Campaignner — Candidate Registration Form",
+      },
+    ], 
     siteName: "Campaignner",
     locale: "en_NG",
     type: "website",
@@ -30,6 +38,7 @@ export const metadata: Metadata = {
     title: "Campaignner — Where Democracy Gets Real",
     description:
       "Transparent candidate profiles, evidence-based debate, and civic accountability tools. Join the waitlist.",
+      images: ["https://campaignner.com/og/campaignner.png"],
   },
 };
 

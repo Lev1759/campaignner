@@ -2,7 +2,7 @@ import Footer from "@/components/landing/Footer";
 import Navbar from "@/components/landing/Navbar";
 import type { Metadata } from "next";
 
-const PAGE_URL = "https://campaignner.com/candidates/register";
+const PAGE_URL = "https://campaignner.com/candidate/register";
 const PAGE_TITLE = "Register as a Candidate | Campaignner";
 const PAGE_DESCRIPTION =
   "Create your verified candidate profile on Campaignner in three steps. Publish your biography, political portfolio, and manifesto across 14 government sectors — free and takes just 10 minutes.";
@@ -62,7 +62,7 @@ const jsonLd = {
       "@type": "ListItem",
       position: 2,
       name: "For Candidates",
-      item: "https://campaignner.com/for-candidates",
+      item: "https://campaignner.com/candidate",
     },
     { "@type": "ListItem", position: 3, name: "Register", item: PAGE_URL },
   ],
