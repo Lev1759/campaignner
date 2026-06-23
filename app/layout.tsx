@@ -16,17 +16,21 @@ export const metadata: Metadata = {
   title: "Campaignner | Engage · Discuss · Transform",
   description:
     "The platform for transparent accountability and meaningful civic engagement in Nigeria. Connect voters, candidates, civil society, and media in one respectful space.",
-  openGraph: {
+  applicationName: "Campaignner",
+  alternates: {
+    canonical: "https://campaignner.com",
+  },
+    openGraph: {
     title: "Campaignner — Where Democracy Gets Real",
     description:
-      "Structured political discourse, transparent candidate profiles, and real civic accountability. Built for Nigeria.",
+      "Structured political discourse, transparent candidate profiles, and real civic accountability. Built for Africa.",
     url: "https://campaignner.com",
     images: [
       {
         url: "https://campaignner.com/og/campaignner.png",
         width: 1200,
         height: 630,
-        alt: "Campaignner — Candidate Registration Form",
+        alt: "Campaignner — Where Democracy Gets Real ",
       },
     ], 
     siteName: "Campaignner",
