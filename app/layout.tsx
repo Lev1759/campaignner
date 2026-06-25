@@ -4,47 +4,125 @@ import "./globals.css";
 
 const lexend = Lexend({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-display",
+  display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
 });
 
+const SITE_URL = "https://campaignner.com";
+const BRAND_TITLE = "Campaignner — Verified Civic Engagement Platform";
+const BRAND_DESCRIPTION =
+  "Campaignner is a verified civic engagement platform — connecting voters, candidates, civil society, and media in one accountable space for evidence-based political discourse.";
+const OG_IMAGE = `${SITE_URL}/og/campaignner-og.png`; 
 export const metadata: Metadata = {
-  title: "Campaignner | Engage · Discuss · Transform",
-  description:
-    "The platform for transparent accountability and meaningful civic engagement in Nigeria. Connect voters, candidates, civil society, and media in one respectful space.",
-  applicationName: "Campaignner",
-  alternates: {
-    canonical: "https://campaignner.com",
+  metadataBase: new URL(SITE_URL),
+
+ 
+  title: {
+    default: BRAND_TITLE,
+    template: "%s | Campaignner",
   },
-    openGraph: {
-    title: "Campaignner — Where Democracy Gets Real",
-    description:
-      "Structured political discourse, transparent candidate profiles, and real civic accountability. Built for Africa.",
-    url: "https://campaignner.com",
+  description: BRAND_DESCRIPTION,
+  applicationName: "Campaignner",
+  keywords: [
+    "Campaignner",
+    "civic engagement platform Nigeria",
+    "verified voter platform",
+    "candidate accountability Nigeria",
+    "Nigeria elections transparency",
+    "civic tech Nigeria",
+    "political portfolio",
+    "candidate manifesto",
+  ],
+  authors: [{ name: "Campaignner" }],
+  creator: "Campaignner",
+  publisher: "Campaignner",
+
+  // Tells Google exactly how to index/crawl — prevents accidental noindex
+  // and explicitly allows large image previews for richer SERP snippets.
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  alternates: {
+    canonical: SITE_URL,
+  },
+
+  icons: {
+    icon: "/favicon.ico", 
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png", 
+  },
+  manifest: "/site.webmanifest", 
+
+  openGraph: {
+    title: BRAND_TITLE,
+    description: BRAND_DESCRIPTION,
+    url: SITE_URL,
+    siteName: "Campaignner",
     images: [
       {
-        url: "https://campaignner.com/og/campaignner.png",
+        url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Campaignner — Where Democracy Gets Real ",
+        alt: "Campaignner — Verified Civic Engagement Platform",
       },
-    ], 
-    siteName: "Campaignner",
+    ],
     locale: "en_NG",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Campaignner — Where Democracy Gets Real",
-    description:
-      "Transparent candidate profiles, evidence-based debate, and civic accountability tools. Join the waitlist.",
-      images: ["https://campaignner.com/og/campaignner.png"],
+    site: "@campaignner", 
+    title: BRAND_TITLE,
+    description: BRAND_DESCRIPTION,
+    images: [OG_IMAGE],
+  },
+
+  
+  other: {
+    "application-name": "Campaignner",
   },
 };
+
+
+function OrganizationSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Campaignner",
+    alternateName: "Campaignner Civic Platform",
+    url: SITE_URL,
+    logo: `${SITE_URL}/og/Campaignner-logo.svg`,
+    description: BRAND_DESCRIPTION,
+    sameAs: [
+     
+      "https://x.com/CampaignnerHQ",
+      "https://www.facebook.com/campaignner",
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 
 export default function RootLayout({
   children,
@@ -56,7 +134,14 @@ export default function RootLayout({
       lang="en"
       className={`${lexend.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <OrganizationSchema />
+      </head>
+      <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );
 }
+
+
+
+

@@ -41,9 +41,9 @@ export default function Footer() {
           </div>
              <div className="flex items-center gap-3 pt-2">
               {[
-                { icon: <FaXTwitter className="w-6 h-6" />, href: "#" },
-                { icon: <FaLinkedin className="w-6 h-6" />, href: "#" },
-                { icon: <FaFacebookF className="w-6 h-6" />, href: "#" },
+                { icon: <FaXTwitter className="w-6 h-6" />, href: "https://x.com/CampaignnerHQ" },
+                // { icon: <FaLinkedin className="w-6 h-6" />, href: "#" },
+                { icon: <FaFacebookF className="w-6 h-6" />, href: "https://web.facebook.com/Campaigner2019" },
                 { icon: <Mail className="w-6 h-6" />, href: "mailto:hello@campaignner.com" },
               ].map(({ icon, href }, idx) => (
                 <Link

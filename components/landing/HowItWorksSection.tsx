@@ -44,7 +44,7 @@ export default function HowItWorksSection() {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section ref={ref} className="py-24 md:py-32 bg-[#f8fafc]">
+    <section id="how-it-works" ref={ref} className="py-24 md:py-32 bg-[#f8fafc]">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://campaignner.com/og/candidate.png",
+        url: "https://campaignner.com/og/campaignner-og.png",
         width: 1200,
         height: 630,
         alt: "Campaignner — Candidate Registration",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: PAGE_TITLE,
     description: PAGE_DESCRIPTION,
-    images: ["https://campaignner.com/og/candidate.png"],
+    images: ["https://campaignner.com/og/campaignner-og.png"],
   },
   robots: { index: true, follow: true },
 };
